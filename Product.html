@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/tinytots.css">
+  <script src="./js/product.js" defer></script>
+  <title>Product - TinyTots</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="tt_banner">
+      <img src="./images/VINAMILK---TOP-BANNER-2.png" alt="">
+    </div>
+
+    <div class="tt_searchbar">
+      <div class="tt_searchbar_control">
+        <div class="container" style="display: flex;">
+          <a href="./Home.html" style="width:25%; margin-top: auto; margin-bottom: auto;">
+            <img src="./images/logo.png" alt="" width="100%">
+          </a>
+
+          <div class="tt_searchbox">
+            <form class="nosubmit">
+              <input id="tt_sb_inp" class="nosubmit" type="text" placeholder="Search">
+            </form>
+          </div>
+
+          <div class="tt_signin">
+            <div class="login">
+              <i class="fa-solid fa-right-to-bracket"></i><input type="button" value="Log in" id="tt_login">
+            </div>
+            <div class="register">
+              <i class="fa-solid fa-user-plus"></i><input type="button" value="Register" id="tt_register">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLOATING BANNER -->
+  <div class="floating">
+    <a href="/Product.html#toys">
+      <div class="floating_left">
+        <img src="./images/1642997795-CC_floating_banner1_đồchơi50__148x373px.png" style="width:150px;" alt="">
+      </div>
+    </a>
+    <a href="/Product.html#toys">
+      <div class="floating_right">
+        <img src="./images/1642997795-CC_floating_banner1_đồchơi50__148x373px.png" style="width:150px;" alt="">
+      </div>
+    </a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="wrapper main-content">
+
+
+    <!-- PRODUCT MENU -->
+    <div class="wrapper_menu product_menu">
+
+      <div class="left_nav" id="myLeftnav" style="width: 25%; z-index: 99;">
+
+        <div class="main_menu">
+          <button class="dropbtn">PRODUCT LIST
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown_content">
+            <a href="./Product.html#babyCare">Baby care<i class="fa-solid fa-baby"
+                style="margin: 3px 0 0 12px; float: right;"></i></a>
+            <a href="./Product.html#fashion">Fashion<i class="fa-solid fa-mitten"
+                style="margin: 3px 0 0 12px; float: right;"></i></a>
+            <a href="./Product.html#toys">Toys<i class="fa-solid fa-puzzle-piece"
+                style="margin: 3px 0 0 12px; float: right;"></i></a>
+            <a href="./Product.html#wellness">Wellness & Hygiene<i class="fa-solid fa-bath"
+                style="margin: 3px 0 0 12px; float: right;"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main_banner" style="width: 75%;">
+
+        <ul class="breadcrumb">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Product.html">Product</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="menu_carousel">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/carousel banner/banner_home_web-01-nan-t1.png" alt="Nan">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel banner/huggies_t1_banner_home.png" alt="Huggies">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel banner/moony_t1_banner_home.png" alt="Moony">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel banner/thoi_trang_banner_home_2.png" alt="Fashion">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <hr style="margin-top: 20pt;">
+    <div class="product_table"></div>
+    <!-- <div class="product_table">
+    <div class="baby_Care" id="baby_Care">
+      <div class="row_header">
+        <p class="h1 row_header_left">Baby Care</p>
+
+        <div class="row_header_right sort_bar">Sort by:<select class="select-items">
+            <option value="" selected>[Sort by...]</option>
+            <option value="name">Alphabetically A-Z</option>
+            <option value="name">Alphabetically Z-A</option>
+            <option value="price">Highest Price</option>
+            <option value="price">Lowest Price</option>
+          </select></div>
+      </div>
+
+      <div class="row_container">
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="1">
+          </div>
+          <a href="./Product_subpage/BabyManicure.html" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Baby care/baby-manicure-set-feeding-387_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Baby Manicure Set</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+
+                <span class="visually-hidden">Regular price</span>
+                <small>$1<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="2">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Baby care/brush-comb-set-feeding-262_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Brush & Comb Set</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$1<sup>49</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="3">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Baby care/hygiene-aquaintr-sanitising-water-self-care-921_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: BBB</span>
+            <p>HYGIENE AQUAINT sanitising water</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$2<sup>49</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="4">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img
+                  src="images/product/Baby care/non-contact-fever-alert-infrared-forehead-thermometer-feeding-304_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: CCC</span>
+            <p>Non-Contact Fever Alert Infrared Forehead Thermometer</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$27<sup>49</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="fashion" id="fashion">
+      <div class="row_header">
+        <p class="h1 row_header_left">Fashion</p>
+      </div>
+
+      <div class="row_container">
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="5">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Fashion/baby-blue-quilted-snowsuit-773_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: CCC</span>
+            <p>Baby Blue Quilted Snowsuit</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$15<sup>49</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="6">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Fashion/bunny-top-pants-clothing-761_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+
+            <p>Bunny Top & Pants</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$17<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="7">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Fashion/sock-ons-white-baby-clothes-333_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+
+            <p>Sock Ons - white</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$2<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="8">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Fashion/velour-premature-baby-all-in-one-elephant-clothing-129_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+
+            <p>Velour Premature Baby All-In-One - Elephant</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$7<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="toys" id="toys">
+      <div class="row_header">
+        <p class="h1 row_header_left">Toys</p>
+      </div>
+
+      <div class="row_container">
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="9">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Toys/stick-man-toys-games-126_360x.jpg" class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Stick Man</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$14<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="10">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Toys/the-gruffalo-gruffalos-child-toys-games-536_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>The Gruffalo - The Gruffalo's Child</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$14<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="11">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Toys/tonie-starter-set-light-blue-toys-games-165_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Tonie Starter Set - Light Blue</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$69<sup>95</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="12">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Toys/tonie-starter-set-pink-toys-games-511_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Tonie Starter Set - Pink</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$69<sup>95</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="wellness_Hygiene" id="wellness_Hygiene">
+      <div class="row_header">
+        <p class="h1 row_header_left">Wellness & Hygiene</p>
+      </div>
+
+      <div class="row_container">
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="13">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Wellness & Hygiene/baby-hooded-towel-lion-bath-time-150_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: AAA</span>
+            <p>Baby Hooded Towel Lion</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$5<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="14">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Wellness & Hygiene/baby-hooded-towel-swan-bath-time-291_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: BBB</span>
+            <p>Baby Hooded Towel Swan</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$5<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="15">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Wellness & Hygiene/rawr-dinosaur-baby-changing-mat-bath-time-353_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: BBB</span>
+            <p>'RAWR!" Dinosaur Baby Changing Mat</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$12<sup>95</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="grid_item img_hover_zoom">
+          <div class="checkbox" data-toggle="tooltip" data-content="Select one more to compare">
+            <input type="checkbox" class="product_checkbox" data-id="16">
+          </div>
+          <a href="#" class="product_grid_item">
+            <div class="product_grid_image" style="height: 176px;">
+              <div class="product_grid_image__centered">
+
+                <img src="images/product/Wellness & Hygiene/star-potty-seats-254_360x.jpg"
+                  class="image_product product_page">
+
+              </div>
+            </div>
+            <span class="visually-hidden">Brand: CCC</span>
+            <p>Star Potty</p>
+
+            <div class="product_item_price">
+              <span class="h1 medium--left">
+                <span class="visually-hidden">Regular price</span>
+                <small>$2<sup>99</sup></small>
+                </small>
+              </span>
+            </div>
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  </div> -->
+
+
+  </div>
+
+
+
+  <footer>
+    <div class="tt__footer">
+      <div>
+        <a href="./Home.html"><img src="./images/logo.png" alt="" class="tt__logo__footer" width="250"></a>
+      </div>
+      <div class="tt__item__footer">
+        <ul class="tt__ul__footer">
+          <li>
+            <a href="./About_us.html">About us</a>
+          </li>
+          <li>
+            <a href="./Become_franchise.html">Become franchise</a>
+          </li>
+          <li>
+            <a href="./Resources.html">Resources</a>
+          </li>
+          <li>
+            <a href="./News.html">News</a>
+          </li>
+        </ul>
+        <div class="tt__pay">
+          <img src="./images/apple pay.png" alt="" class="tt__pay__footer" width="6%" title="Apple pay">
+          <img src="./images/mastercard.png" alt="" class="tt__pay__footer" width="5%" title="Mastercard">
+          <img src="./images/paypal.png" alt="" class="tt__pay__footer" width="5%" title="Pay pal">
+          <img src="./images/visa.png" alt="" class="tt__pay__footer" width="5%" title="Visa">
+        </div>
+      </div>
+      <hr class="hr">
+      <div class="tt__connect">
+        <p>&copy; 2022 TinyTots. <br>
+          Address: <u class="tt__u">590 CMT8, Ward 11, District 3, HCMC</u><br>
+          Telephone: (+91) 123.4567890 <br>
+          Gmail: <a href="mailto:trungntts2110033@fpt.edu.vn">trungntts2110033@fpt.edu.vn</a></p>
+        <div class="tt__connect__footer">
+          <a href="https://www.facebook.com/"><img src="./images/fb.png" alt="" class="tt__icon__footer"
+              title="Facebook"></a>
+          <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="" class="tt__icon__footer"
+              title="Youtube"></a>
+          <a href="https://www.instagram.com/"><img src="./images/insta.png" alt="" class="tt__icon__footer"
+              title="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- compareTable -->
+  <div class="sidenav compare">
+    <div class="container-fluid" id="compareTable">
+      <div class="row">
+        <i class="fa fa-times remove-circle"></i>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="table-responsive">
+            <table class="table table-hover" id="table-compare">
+              <!-- Product image -->
+              <tr>
+
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/product.js"></script>
+</body>
+
+
+</html>

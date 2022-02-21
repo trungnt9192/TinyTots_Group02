@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tinytots.css">
+
+    <title>News - TinyTots</title>
+
+
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="tt_banner">
+            <img src="./images/VINAMILK---TOP-BANNER-2.png" alt="">
+        </div>
+
+        <div class="tt_searchbar">
+            <div class="tt_searchbar_control">
+                <div class="container" style="display: flex;">
+                    <a href="./Home.html" style="width:25%; margin-top: auto; margin-bottom: auto;">
+                        <img src="./images/logo.png" alt="" width="100%">
+                    </a>
+
+                    <div class="tt_searchbox">
+                        <form class="nosubmit">
+                            <input id="tt_sb_inp" class="nosubmit" type="search" placeholder="Search">
+                        </form>
+                    </div>
+
+                    <div class="tt_signin">
+                        <div class="login">
+                            <i class="fa-solid fa-right-to-bracket"></i><input type="button" value="Log in"
+                                id="tt_login">
+                        </div>
+                        <div class="register">
+                            <i class="fa-solid fa-user-plus"></i><input type="button" value="Register" id="tt_register">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FLOATING BANNER -->
+    <div class="floating">
+        <a href="/Product.html#toys">
+            <div class="floating_left">
+                <img src="./images/1642997795-CC_floating_banner1_đồchơi50__148x373px.png" style="width:150px;" alt="">
+            </div>
+        </a>
+        <a href="/Product.html#toys">
+            <div class="floating_right">
+                <img src="./images/1642997795-CC_floating_banner1_đồchơi50__148x373px.png" style="width:150px;" alt="">
+            </div>
+        </a>
+    </div>
+
+
+
+<section>
+    <!-- MAIN CONTENT -->
+    <div class="wrapper main-content">
+
+        <!-- PRODUCT MENU -->
+        <div class="wrapper_menu product_menu" style="background-color: antiquewhite;">
+
+            <div class="left_nav" id="myLeftnav" style="width: 25%;">
+
+                <div class="main_menu">
+                    <button class="dropbtn">PRODUCT LIST
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown_content">
+                        <a href="./Product.html#babyCare">Baby care<i class="fa-solid fa-baby"
+                            style="margin: 3px 0 0 12px; float: right;"></i></a>
+                        <a href="./Product.html#fashion">Fashion<i class="fa-solid fa-mitten"
+                            style="margin: 3px 0 0 12px; float: right;"></i></a>
+                        <a href="./Product.html#toys">Toys<i class="fa-solid fa-puzzle-piece"
+                            style="margin: 3px 0 0 12px; float: right;"></i></a>
+                        <a href="./Product.html#wellness">Wellness & Hygiene<i class="fa-solid fa-bath"
+                            style="margin: 3px 0 0 12px; float: right;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_banner" style="width: 75%;">
+
+                <ul class="breadcrumb">
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./News.html">News</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- NEWS -->
+        <div>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/sua-aptamil-essensis-so-1-cho-be-0-6-thang-900g_55a93558ab0c41909e86fd55f2b62a68-696x696.jpg"
+                                alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news1.html" class="tt_link">
+                                <b>
+                                    <h5>Sữa Aptamil Essensis có hộp nhỏ<br></h5>
+                                </b>
+                            </a>
+                            Sữa Aptamil Essensis có hộp nhỏ không? Nổi tiếng là dòng sữa mát cao cấp, đặc biệt
+                            <br>
+                            là phù hợp với các bé có cơ địa nhạy cảm, dễ dị ứng. Sữa bột luôn là thực phẩm được
+                            <br>
+                            mẹ quan tâm hàng đầu, đặc biệt là mẹ không có điều kiện nuôi con hoàn toàn bằng sữa
+                            <br>
+                            mẹ. Đứng trước thị trường sữa bột phong phú, sữa bột hộp nhỏ luôn được mẹ săn tìm
+                            <br>
+                            bởi tâm lý tránh lãng phí nếu con không thích uống hoặc không hợp sữa.
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/tiet-trung-dung-cu-pha-sua-cho-be-1.jpg" alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news2.html" class="tt_link">
+                                <b>
+                                    <h5>[Hướng dẫn mẹ] Cách pha sữa Aptamil số 1,2,3,4 chi tiết nhất<br></h5>
+                                </b>
+                            </a>
+                            Sữa Aptamil là sản phẩm sữa nhập khẩu được nhiều bà mẹ Việt Nam tin dùng cho con.
+                            Cũng
+                            <br>
+                            chính vì là sản phẩm nhập khẩu nên chắc hẳn mẹ có nhiều thắc mắc về cách pha sữa.
+                            Liệu
+                            <br>
+                            có gì khác so với cách pha các loại sữa bột trong nước hay không? Dưới đây là hướng
+                            dẫn
+                            <br>
+                            cách pha sữa Aptamil chung cho các sản phẩm số 1,2,3,4. Với công thức tương tự nhau
+                            nên
+                            <br>
+                            dù là sữa Aptamil Anh hay sữa Aptamil Đức thì đều có thể áp dụng được các mẹ nhé.
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/lam-ao-tap-cho-be-bo-bu-dem-2-614x420.jpg" alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news3.html" class="tt_link">
+                                <b>
+                                    <h5>Có nên cho bé bỏ bú đêm? Làm sao tập cho bé bỏ bú đêm?<br></h5>
+                                </b>
+                            </a>
+                            Làm sao tập cho bé bỏ bú đêm là một trong những vấn đề mà mẹ bỉm sữa nào cũng gặp
+                            phải
+                            <br>
+                            trong quá trình nuôi dạy con. Mỗi phụ huynh sẽ có những cách tập bỏ bú đêm cho bé
+                            riêng,
+                            <br>
+                            phù hợp với bé nhất. Tuy nhiên nếu mẹ nào còn đang gặp rắc rối trong vấn đề này thì
+                            bài
+                            <br>
+                            viết dưới đây sẽ là những thông tin mẹ không nên bỏ qua.
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/110136370_1332833683588048_860759042948701912_n-400x400.jpg" alt=""
+                                width="80%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news4.html" class="tt_link">
+                                <b>
+                                    <h5>15 LOẠI THỰC PHẨM LÀNH MẠNH GIÚP BÉ THÔNG MINH HƠN<br></h5>
+                                </b>
+                            </a>
+                            Bất cứ người làm cha, làm mẹ nào cũng mong muốn cho con của mình phát triển toàn
+                            diện cả
+                            <br>
+                            về thể chất và trí tuệ. Bên cạnh yếu tố di truyền, thì môi trường, thực phẩm bé ăn
+                            hằng
+                            <br>
+                            ngày cũng góp phần quan trọng trong việc phát triển trí não của bé. Bởi vì trong một
+                            số
+                            <br>
+                            thực phẩm có những dường chất vô cùng tốt thúc đẩy sự thông minh. Vậy nên cho bé ăn
+                            gì
+                            <br>
+                            cho thông minh hơn? Ba mẹ tham khảo 15 loại thực phẩm dưới đây nhé.
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/tre-quay-khoc-ve-dem.anh-1-711x400.jpg" alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news5.html" class="tt_link">
+                                <b>
+                                    <h5>TRẺ NGỦ KHÔNG NGON GIẤC, GIẬT MÌNH, QUẤY KHÓC ĐÊM – NGUYÊN <br>
+                                        NHÂN, TÁC HẠI, GIẢI PHÁP<br></h5>
+                                </b>
+                            </a>
+                            Nguyên nhân khiến trẻ ngủ không ngon giấc, giật mình và quấy khóc đêm
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/News/20190821_063646_812356_cham_soc_ron_cho_tr.max-1800x1800.jpg"
+                                alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news6.html" class="tt_link">
+                                <b>
+                                    <h5>Cách chăm sóc rốn cho trẻ sơ sinh<br></h5>
+                                </b>
+                            </a>
+                            Chăm sóc trẻ sơ sinh đúng cách là cần phải biết cách chăm sóc rốn cho trẻ sơ sinh.
+                            <br>
+                            Cuống rốn của trẻ sơ sinh là một vết thương hở, nếu không được chăm sóc đúng cách sẽ
+                            <br>
+                            rất dễ bị nhiễm trùng. Đây là một tình trạng rất nguy hiểm, nếu không được phát hiện
+                            <br>
+                            và điều trị kịp thời có thể gây biến chứng nhiễm trùng máu ở trẻ.Việc chăm sóc rốn
+                            cho
+                            <br>
+                            trẻ sơ sinh cần phải được làm hằng ngày
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div>
+                <table class="tt_table_news">
+                    <tr width="100%">
+                        <td width="30%">
+                            <img src="./images/news/tu-the-ngu-cua-tre-3.jpg" alt="" width="50%">
+                        </td>
+                        <td align="left" width="70%">
+                            <a href="./News_subpage/news7.html" class="tt_link">
+                                <b>
+                                    <h5>Cách chăm sóc trẻ sơ sinh: Đặt bé ngủ sao cho đúng?<br></h5>
+                                </b>
+                            </a>
+                            Phòng ngủ của bé nên sạch sẽ, thoáng mát và yên tĩnh để bé dễ ngủ. Với trẻ sơ sinh
+                            đủ
+                            <br>
+                            tháng, khỏe mạnh, nhiệt độ phòng thích hợp là khoảng 28ºC. Nếu dùng điều hòa, bạn
+                            không
+                            <br>
+                            nên để nhiệt độ phòng quá thấp vì có thể khiến bé bị cảm lạnh dù đã được quấn khăn
+                            và
+                            đắp <br>
+                            chăn đầy đủ.
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="tt__footer">
+        <div>
+            <a href="./Home.html"><img src="./images/logo.png" alt="" class="tt__logo__footer" width="250"></a>
+        </div>
+        <div class="tt__item__footer">
+            <ul class="tt__ul__footer">
+                <li>
+                    <a href="./About_us.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="./Become_franchise.html">Become franchise</a>
+                  </li>
+                  <li>
+                    <a href="./Resources.html">Resources</a>
+                  </li>
+                  <li>
+                    <a href="./News.html">News</a>
+                  </li>
+            </ul>
+            <div class="tt__pay">
+                <img src="./images/apple pay.png" alt="" class="tt__pay__footer" width="6%" title="Apple pay">
+                <img src="./images/mastercard.png" alt="" class="tt__pay__footer" width="5%" title="Mastercard">
+                <img src="./images/paypal.png" alt="" class="tt__pay__footer" width="5%" title="Pay pal">
+                <img src="./images/visa.png" alt="" class="tt__pay__footer" width="5%" title="Visa">
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="tt__connect">
+            <p>&copy; 2022 TinyTots. <br>
+                Address: <u class="tt__u">590 CMT8, Ward 11, District 3, HCMC</u><br>
+                Telephone: (+91) 123.4567890 <br>
+                Gmail: <a href="mailto:trungntts2110033@fpt.edu.vn">trungntts2110033@fpt.edu.vn</a></p>
+            <div class="tt__connect__footer">
+                <a href="https://www.facebook.com/"><img src="./images/fb.png" alt="" class="tt__icon__footer"
+                        title="Facebook"></a>
+                <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="" class="tt__icon__footer"
+                        title="Youtube"></a>
+                <a href="https://www.instagram.com/"><img src="./images/insta.png" alt="" class="tt__icon__footer"
+                        title="Instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
