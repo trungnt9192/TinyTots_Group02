@@ -1,5 +1,4 @@
-# TinyTots_Group02
-# eProjectSem01
+# eProjectSem01_TinyTots_Group02
 
 TinyTots
 =====================================
