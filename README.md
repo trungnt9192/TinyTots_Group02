@@ -15,6 +15,6 @@ TinyTots
 =====================================      
 Documentations: https://github.com/trungnt9192/TinyTots_Group02/tree/main/Documentations
 =====================================
-Published Website:...
+Published Website: https://trungnt9192.github.io/TinyTots_Group02/
 =====================================
 Thank you for visiting our Website.
