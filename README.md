@@ -13,7 +13,7 @@ TinyTots
 
 
 =====================================      
-Documentations:...
+Documentations: https://github.com/trungnt9192/TinyTots_Group02/tree/main/Documentations
 =====================================
 Published Website:...
 =====================================
